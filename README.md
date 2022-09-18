@@ -24,7 +24,6 @@
 
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vitorluigiorsini/nlw-eSports">
 
-  <img alt="Github license" src="https://img.shields.io/github/license/vitorluigiorsini/nlw-eSports">
 </p>
 
 <br/>
