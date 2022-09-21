@@ -6,6 +6,9 @@ module.exports = {
       sans: ["Inter", "sans-serif"],
     },
     extend: {
+      fontSize: {
+        titleClamp: "clamp(1.87rem, 5vw, 3.75rem)",
+      },
       backgroundImage: {
         galaxy: "url('/background-galaxy.png')",
         "nlw-gradient": "linear-gradient(89.86deg, #9572FC, #43E7AD, #E1D55D)",

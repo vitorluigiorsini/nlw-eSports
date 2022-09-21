@@ -55,7 +55,7 @@ export function CreateAdModal() {
   return (
     <Dialog.Portal>
       <Dialog.Overlay className="bg-black/60 inset-0 fixed" />
-      <Dialog.Content className="fixed bg-[#2A2634] py-8 px-10 text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg w-[480px] shadow-lg shadow-black/25">
+      <Dialog.Content className="fixed bg-[#2A2634] py-8 px-8 sm:px-10 text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg w-[380px] sm:w-[480px] shadow-lg shadow-black/25">
         <Dialog.Title className="text-3xl font-black">
           Publique um anúncio
         </Dialog.Title>
@@ -131,7 +131,7 @@ export function CreateAdModal() {
               <Input name="discord" id="discord" placeholder="Usuario#0000" />
             </div>
           </div>
-          <div className="flex gap-6">
+          <div className="flex flex-col sm:flex-row gap-6">
             <div className="flex flex-col gap-2">
               <label htmlFor="weekDays" className="font-semibold">
                 Quando costuma jogar?
@@ -139,14 +139,14 @@ export function CreateAdModal() {
 
               <ToggleGroup.Root
                 type="multiple"
-                className="flex gap-[3px]"
+                className="flex gap-2 sm:gap-[3px]"
                 value={weekDays}
                 onValueChange={setWeekDays}
               >
                 <ToggleGroup.Item
                   value="0"
                   title="Domingo"
-                  className={`w-6 h-12 rounded  ${
+                  className={`w-10 h-10 sm:w-6 sm:h-12 rounded  ${
                     weekDays.includes("0") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                 >
@@ -155,7 +155,7 @@ export function CreateAdModal() {
                 <ToggleGroup.Item
                   value="1"
                   title="Segunda"
-                  className={`w-6 h-12 rounded  ${
+                  className={`w-10 h-10 sm:w-6 sm:h-12 rounded  ${
                     weekDays.includes("1") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                 >
@@ -164,7 +164,7 @@ export function CreateAdModal() {
                 <ToggleGroup.Item
                   value="2"
                   title="Terça"
-                  className={`w-6 h-12 rounded  ${
+                  className={`w-10 h-10 sm:w-6 sm:h-12 rounded  ${
                     weekDays.includes("2") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                 >
@@ -173,7 +173,7 @@ export function CreateAdModal() {
                 <ToggleGroup.Item
                   value="3"
                   title="Quarta"
-                  className={`w-6 h-12 rounded  ${
+                  className={`w-10 h-10 sm:w-6 sm:h-12 rounded  ${
                     weekDays.includes("3") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                 >
@@ -182,7 +182,7 @@ export function CreateAdModal() {
                 <ToggleGroup.Item
                   value="4"
                   title="Quinta"
-                  className={`w-6 h-12 rounded  ${
+                  className={`w-10 h-10 sm:w-6 sm:h-12 rounded  ${
                     weekDays.includes("4") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                 >
@@ -191,7 +191,7 @@ export function CreateAdModal() {
                 <ToggleGroup.Item
                   value="5"
                   title="Sexta"
-                  className={`w-6 h-12 rounded  ${
+                  className={`w-10 h-10 sm:w-6 sm:h-12 rounded  ${
                     weekDays.includes("5") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                 >
@@ -200,7 +200,7 @@ export function CreateAdModal() {
                 <ToggleGroup.Item
                   value="6"
                   title="Sábado"
-                  className={`w-6 h-12 rounded  ${
+                  className={`w-10 h-10 sm:w-6 sm:h-12 rounded  ${
                     weekDays.includes("6") ? "bg-violet-500" : "bg-zinc-900"
                   }`}
                 >
